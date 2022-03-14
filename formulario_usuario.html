@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: hsl(0,100%,50%);;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+
+
+        article {
+            background-color: #ADD8E6;
+
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: ;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo_small.png">
+    </header>
+
+    <section>
+       
+
+        <article>
+          <center>
+            <div id="after_submit"></div>
+                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                  <div class="row">
+                    <label class="required" for="name">Nombre:</label><br />
+                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                    <span id="name_validation" class="error_message"></span>
+                  </div>
+                  <div class="row">
+                    <label class="required" for="email">Correo:</label><br />
+                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    <span id="email_validation" class="error_message"></span>
+                  </div>
+                  <div class="row">
+                    <label class="required" for="message">Mensaje:</label><br />
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                    <span id="message_validation" class="error_message"></span>
+                  </div>
+                    
+                    <input id="submit_button" type="submit" value="Send email" />
+                </form>
+
+          </center>
+        </article>
+    </section>
+
+    <footer>
+        <p> The Sweet Bakery</p>
+        <p>Dirección: En algún lugar</p>
+        <p>Télefono:018003000</p>
+        <p>correo: contact@sweetbakery.com</p>
+    </footer>
+
+</body>
+
+</html>

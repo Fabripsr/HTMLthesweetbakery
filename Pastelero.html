@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: hsl(0,100%,50%);;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+
+
+        article {
+
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color:  	#707070 ;
+            padding: 10 px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo_small.png">
+    </header>
+
+    <section>
+       
+
+        <article>
+          <center>
+          <table border="1">
+                <center><h2>Insumos Restantes</h2></center>
+                <center>
+                <tr><td> <label for="sabor1"> Chocolate</label><br></td><td>10</td>
+                <td> <label for="arreglo1"> Texturizado</label><br></td>
+                <td>2</td>
+                </tr>
+                
+                <tr><td><label for="sabor2"> Vainilla</label><br></td><td>5</td>
+                <td><label for="arreglo2">Decoración floral</label><br></td><td>15</td>
+                </tr>
+                
+                <tr><td><label for="sabor3"> Fresa</label><br></td>
+                <td>7</td>
+                </tr> 
+                </center>
+            </tr>
+          </table>
+          
+          <center>
+          <table border="1">
+                <center><h2>Pedidos realizados</h2></center>
+                <center>
+                <tr><td> <label for="sabor1"> Chocolate</label><br></td>
+                <td> <label for="arreglo1"> Sin decoración</label><br></td><td> Fondant blanco por favor, gluten free</td>
+    
+                </tr>
+                
+                <tr><td><label for="sabor2"> Fresa</label><br></td><td>Texturizado</td>
+                <td><label for="arreglo2">Favor de hacer con crema batida color negro</label><br></td>
+                </tr>
+                
+                </tr> 
+                </center>
+            </tr>
+          </table>
+          
+          
+         <!---<a href="formulario_usuario.html">
+          <button type="button">Hacer pedido</button></center></a>--->
+        </article>
+    </section>
+
+    <footer>
+        <p>The Sweet Bakery</p>
+        <p>Dirección: En algún lugar</p>
+        <p>Télefono:018003000</p>
+        <p>correo: contact@sweetbakery.com</p>
+        <p>Horario: 10:00 am - 5:00 pm</p>
+        
+    </footer>
+
+</body>
+
+</html>
